@@ -81,10 +81,9 @@ set note(note)
   toString()
   {
         const options = { year: 'numeric', month: 'short', day: 'numeric' };
-        //if start date is not in the given datatype it will pass the value undefined to empdate
         
-        const empDate = !this._startDate ? "undefined" : this._startDate;
-        //here in return for start date we are passing empDate as value                
+        const empDate = !this._startDate ? "undefined" : this._startDate.toLocaleDateString("en-US", options);
+              
         return "id=" + this._id + ", name=" + this._name + " gender= " +this._gender+ " profilePic= "+this.profilePic + " department= "+this._department + " salary= "+ this._salary+ " Note= "+this._note +  " startDate =" + empDate;
   }
 }

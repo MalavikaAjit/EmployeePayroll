@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">
     <title>Employee Payroll Form</title>
-    <link rel="stylesheet" href="../css/employeePayroll.css">
+    <link rel="stylesheet" href="../css/emplpoyeePayroll.css">
    
 </head>
 <body>
+    <!-- UC1 :  -->
    <header class="header-content header">
        <div class="logo-content">
            <img src="../assets/images/logo.png"  alt="logo">
@@ -19,6 +20,7 @@
            </div>
        </div>
    </header> 
+ <!-- UC2: -->
    <div id="formId" class="form-content">
     <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
 
@@ -28,6 +30,7 @@
             <input class="input" type="text" id="name" name="name"  placeholder="Your name.." required>
             <error-output class="text-error" for="text"></error-output>
           </div>
+        <!-- UC3:-->
           <div class="row-content">
             <label for="profile" class="lable text">Profile image</label>
             <div class="profile-radio-content">
@@ -54,6 +57,7 @@
             </div>
         </div>
 
+         <!-- UC4 -->
          <div class="row-content">
             <label class="label text" for="gender">Gender</label>
             <div>
@@ -86,6 +90,8 @@
                 value="400000">
             <output class="salary-output text" for="salary">400000</output>
         </div>
+
+        <!-- UC5 -->
         <div class="row-content">
             <label class="label text" for="startDate"> Start Date </label>
             <div>
@@ -145,12 +151,13 @@
              </select>
         </div>
         </div>
+         <!----UC6---->
        <div class="row-content">
            <label class="label text" for="notes">Notes</label>
            <textarea id="notes" class="input" name="Notes" placeholder="" style="height:100px"></textarea>
        </div>
        <div class="buttonParent">
-           <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
+           <a href="home.html" class="resetButton button cancelButton">Cancel</a>
         <div class="submit-reset">
             <button type="submit" class="button submitButton" id="submitButton">Submit</button>
             <button type="reset" class="resetButton button">Reset</button>
@@ -158,8 +165,8 @@
      </div>
     </form>
    </div>
-   <script src="../javascript/employeePayroll.js"></script>
-   <script src="../javascript/employeePayrollData.js"></script>
+   <script src="../js/employeePayroll.js"></script>
+   <script src="../js/employeePayrollData.js"></script>
 </body>
 
 </html>
